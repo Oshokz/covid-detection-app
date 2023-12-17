@@ -28,7 +28,7 @@ if uploaded_file is not None:
     img = np.expand_dims(img, axis=0)  # Change the batch dimension to (1, 64, 64, 3)  
 
     # Load the trained model
-    model = load_model(r"C:\Users\User\streamlit_sample\covid_vgg_model.h5")
+    model = load_model(r"C:\Users\User\covid_detection_model\covid_vgg_model.h5")
 
     # Make predictions
     prediction = model.predict(img)
